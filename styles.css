@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(275, 100%, 97%);
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    margin: 0;
+    
+}
+.svg-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
+@media screen and(max-width:750px)  {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+.outer{
+    height:500px;
+    width: 650px;
+    background-color: white;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.star{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.FAQ{
+    display: flex;
+}
+h1{
+    margin-left: 20px;
+}
+h3{
+    margin-left: 20px;
+}
+.question{
+    display: flex;
+    cursor: pointer;
+}
+.question:hover{
+    color: hsl(292, 58%, 54%);
+}
+.minus{
+    margin-top: 18px;
+    margin-left: 50px;
+}
+p{
+    margin-left: 20px;
+    color:hsl(292, 16%, 49%);
+}
+
+.plusIcon{
+    margin-top: 18px;
+    margin-left: 550px;
+    position: absolute;
+}
+
+.content{
+    display: none;
+}
+.minusIcon{
+    display: none;
+    margin-top: 18px;
+    margin-left: 550px;
+    position: absolute;
+}
